@@ -5,13 +5,17 @@ import java.util.List;
 
 public class Character {
 
-    private String name ;
+    private final String name ;
     private Long gold = 0L;
     private Long experience = 0L;
     private List<String> bossesSlain = new ArrayList<>();
 
     public Character(String name) {
         this.name = name;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public Long getGold() {

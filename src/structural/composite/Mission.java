@@ -1,5 +1,5 @@
 package structural.composite;
 
 public interface Mission {
-    public abstract boolean isCompleted(Character character);
+    boolean isCompleted(Character character);
 }
