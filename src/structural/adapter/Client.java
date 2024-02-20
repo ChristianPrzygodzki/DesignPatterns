@@ -11,11 +11,11 @@ public class Client {
 
         List<Stick> sticksToTest = new ArrayList<>(List.of(normalStick, englishStickAdapter));
 
-        for (int i = 0; i < sticksToTest.size(); i++) {
-            if(sticksToTest.get(i).willReachBallOnTree()){
-                System.out.println("Stick " + (i+1) + " will reach ball on tree.");
+        for (Stick stick : sticksToTest) {
+            if(stick.willReachBallOnTree()){
+                System.out.println("This stick will reach ball on tree.");
             } else{
-                System.out.println("Stick " + (i+1) + " won't reach ball on tree.");
+                System.out.println("This stick won't reach ball on tree.");
             }
         }
     }
